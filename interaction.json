@@ -1,0 +1,60 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "octo adventure",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "OctoSearchIntent",
+                    "slots": [
+                        {
+                            "name": "venue",
+                            "type": "AMAZON.MusicVenue"
+                        },
+                        {
+                            "name": "date",
+                            "type": "AMAZON.DATE"
+                        }
+                    ],
+                    "samples": [
+                        "is there an event {date}",
+                        "is there a concert {date}",
+                        "is there an event",
+                        "is there a concert",
+                        "is there an event at the {venue} {date}",
+                        "is there an event at the {venue} on {date}",
+                        "is there a concert at the {venue} on {date}",
+                        "is there a concert at the {venue} {date}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "AMAZON.MusicVenue",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "hollywood bowl"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
